@@ -123,7 +123,7 @@ public class TeacherController {
 	 * This method will delete an employee by it's SSN value.
 	 */
 	@RequestMapping(value = { "/delete-{teacherId}-teacher" }, method = RequestMethod.GET)
-	public String deleteEmployee(@PathVariable String teacherId) {
+	public String deleteTeacher(@PathVariable String teacherId) {
 		service.deleteTeacherByTeacherId(teacherId);
 		return "redirect:/listTeachers";
 	}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<teacher id="1"		NAME="MALMIKE"	EMAIL="malmike21@outlook.com"	PASSWORD="password"		PHONE_NUMBER="0794243072"	STATUS="InActive"	TEACHER_ID="11111"	/>
+	<teacher id="2"		NAME="TOMY"		EMAIL="tomy21@outlook.com"		PASSWORD="password"		PHONE_NUMBER="0794243072"	STATUS="InActive"	TEACHER_ID="11112"	/>
+</dataset>
