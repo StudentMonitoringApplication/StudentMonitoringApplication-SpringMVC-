@@ -29,7 +29,7 @@ import com.sma.model.*;
 public class TeacherControllerTest {
 	
 	@Mock
-	TeacherService service;
+	TeacherService tService;
 	
 	@Mock
 	MessageSource message;
@@ -54,10 +54,10 @@ public class TeacherControllerTest {
 	
 	@Test
 	public void listTeachers(){
-		when(service.findAllTeachers()).thenReturn(teachers);
+		when(tService.findAllTeachers()).thenReturn(teachers);
 		Assert.assertEquals(teacherController.listTeachers(model),	"allteachers");
 		Assert.assertEquals(model.get("teachers"), teachers);
-		verify(service, atLeastOnce()).findAllTeachers();
+		verify(tService, atLeastOnce()).findAllTeachers();
 	}
 	
 	@Test
@@ -71,22 +71,22 @@ public class TeacherControllerTest {
 	@Test
 	public void saveTeacherWithValidationError(){
 		when(result.hasErrors()).thenReturn(true);
-		doNothing().when(service).saveTeacher(any(Teacher.class));
+		doNothing().when(tService).saveTeacher(any(Teacher.class));
 		Assert.assertEquals(teacherController.saveTeacher(teachers.get(0), result, model), "teacherRegistration");
 	}
 	
 	@Test
 	public void saveTeacherWithValidationErrorNonUniqueTeacherId(){
 		when(result.hasErrors()).thenReturn(false);
-		when(service.isTeacherIdUnique(anyInt(), anyString())).thenReturn(false);
+		when(tService.isTeacherIdUnique(anyInt(), anyString())).thenReturn(false);
 		Assert.assertEquals(teacherController.saveTeacher(teachers.get(0), result, model), "teacherRegistration");
 	}
 	
 	@Test
 	public void saveTeacherWithSuccess(){
 		when(result.hasErrors()).thenReturn(false);
-		when(service.isTeacherIdUnique(anyInt(), anyString())).thenReturn(true);
-		doNothing().when(service).saveTeacher(any(Teacher.class));
+		when(tService.isTeacherIdUnique(anyInt(), anyString())).thenReturn(true);
+		doNothing().when(tService).saveTeacher(any(Teacher.class));
 		Assert.assertEquals(teacherController.saveTeacher(teachers.get(0), result, model), "success");
 		Assert.assertEquals(model.get("success"), "Teacher Malmike registered successfully");
 	}
@@ -96,7 +96,7 @@ public class TeacherControllerTest {
 	@Test
 	public void editTeacher(){
 		Teacher teacher = teachers.get(0);
-		when(service.findTeacherByTeacherId(anyString())).thenReturn(teacher);
+		when(tService.findTeacherByTeacherId(anyString())).thenReturn(teacher);
 		Assert.assertEquals(teacherController.editTeacher(anyString(), model), "teacherRegistration");
 		Assert.assertNotNull(model.get("teacher"));
 		Assert.assertTrue((Boolean)model.get("edit"));
@@ -106,29 +106,29 @@ public class TeacherControllerTest {
 	@Test
 	public void updateTeacherWithValidationError(){
 		when(result.hasErrors()).thenReturn(true);
-		doNothing().when(service).updateTeacher(any(Teacher.class));
+		doNothing().when(tService).updateTeacher(any(Teacher.class));
 		Assert.assertEquals(teacherController.updateTeacher(teachers.get(0), result, model, ""), "teacherRegistration");
 	}
 	
 	@Test
 	public void updateTeacherWithValidationErrorNonUniqueSSN(){
 		when(result.hasErrors()).thenReturn(false);
-		when(service.isTeacherIdUnique(anyInt(), anyString())).thenReturn(false);
+		when(tService.isTeacherIdUnique(anyInt(), anyString())).thenReturn(false);
 		Assert.assertEquals(teacherController.updateTeacher(teachers.get(0), result, model, ""), "teacherRegistration");
 	}
 	
 	@Test
 	public void updateTeacherWithSuccess(){
 		when(result.hasErrors()).thenReturn(false);
-		when(service.isTeacherIdUnique(anyInt(), anyString())).thenReturn(true);
-		doNothing().when(service).updateTeacher(any(Teacher.class));
+		when(tService.isTeacherIdUnique(anyInt(), anyString())).thenReturn(true);
+		doNothing().when(tService).updateTeacher(any(Teacher.class));
 		Assert.assertEquals(teacherController.updateTeacher(teachers.get(0), result, model, ""), "success");
 		Assert.assertEquals(model.get("success"), "Teacher Malmike updated successfully");
 	}
 	
 	@Test
 	public void deleteTeacher(){
-		doNothing().when(service).deleteTeacherByTeacherId(anyString());
+		doNothing().when(tService).deleteTeacherByTeacherId(anyString());
 		Assert.assertEquals(teacherController.deleteTeacher("123"), "redirect:/listTeachers");
 	}
 	

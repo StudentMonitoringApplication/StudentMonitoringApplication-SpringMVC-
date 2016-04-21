@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.sma.model.Teacher;
+import com.sma.service.SubjectService;
 import com.sma.service.TeacherService;
 
 @Controller
@@ -23,7 +24,10 @@ import com.sma.service.TeacherService;
 public class TeacherController {
 
 	@Autowired
-	TeacherService service;
+	TeacherService tService;
+	
+	/*@Autowired
+	SubjectService sService;*/
 	
 	@Autowired
 	MessageSource messageSource;
@@ -34,7 +38,7 @@ public class TeacherController {
 	@RequestMapping(value = { "/", "/listTeachers" }, method = RequestMethod.GET)
 	public String listTeachers(ModelMap model) {
 
-		List<Teacher> teachers = service.findAllTeachers();
+		List<Teacher> teachers = tService.findAllTeachers();
 		model.addAttribute("teachers", teachers);
 		return "allteachers";
 	}
@@ -71,13 +75,13 @@ public class TeacherController {
 		 * framework as well while still using internationalized messages.
 		 * 
 		 */
-		if(!service.isTeacherIdUnique(teacher.getId(), teacher.getTeacherId())){
+		if(!tService.isTeacherIdUnique(teacher.getId(), teacher.getTeacherId())){
 			FieldError ssnError =new FieldError("teacher","teacherId",messageSource.getMessage("non.unique.teacherId", new String[]{teacher.getTeacherId()}, Locale.getDefault()));
 		    result.addError(ssnError);
 			return "teacherRegistration";
 		}
 		
-		service.saveTeacher(teacher);
+		tService.saveTeacher(teacher);
 
 		model.addAttribute("success", "Teacher " + teacher.getName() + " registered successfully");
 		return "success";
@@ -89,7 +93,7 @@ public class TeacherController {
 	 */
 	@RequestMapping(value = { "/edit-{teacherId}-teacher" }, method = RequestMethod.GET)
 	public String editTeacher(@PathVariable String teacherId, ModelMap model) {
-		Teacher teacher = service.findTeacherByTeacherId(teacherId);
+		Teacher teacher = tService.findTeacherByTeacherId(teacherId);
 		model.addAttribute("teacher", teacher);
 		model.addAttribute("edit", true);
 		return "teacherRegistration";
@@ -107,13 +111,13 @@ public class TeacherController {
 			return "teacherRegistration";
 		}
 
-		if(!service.isTeacherIdUnique(teacher.getId(), teacher.getTeacherId())){
+		if(!tService.isTeacherIdUnique(teacher.getId(), teacher.getTeacherId())){
 			FieldError ssnError =new FieldError("teacher","teacherId",messageSource.getMessage("non.unique.teacherId", new String[]{teacher.getTeacherId()}, Locale.getDefault()));
 		    result.addError(ssnError);
 			return "teacherRegistration";
 		}
 
-		service.updateTeacher(teacher);
+		tService.updateTeacher(teacher);
 
 		model.addAttribute("success", "Teacher " + teacher.getName()	+ " updated successfully");
 		return "success";
@@ -124,7 +128,7 @@ public class TeacherController {
 	 */
 	@RequestMapping(value = { "/delete-{teacherId}-teacher" }, method = RequestMethod.GET)
 	public String deleteTeacher(@PathVariable String teacherId) {
-		service.deleteTeacherByTeacherId(teacherId);
+		tService.deleteTeacherByTeacherId(teacherId);
 		return "redirect:/listTeachers";
 	}
 
