@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="23" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3032" started-at="2016-04-21T18:20:13Z" finished-at="2016-04-21T18:20:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3032" started-at="2016-04-21T18:20:13Z" finished-at="2016-04-21T18:20:16Z">
+      <class name="com.sma.dao.TeacherDaoImplTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="6" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="2133" started-at="2016-04-21T21:20:13Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="57" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.deleteTeacherByInvalidTeacherId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="setUp" is-config="true" duration-ms="122" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteTeacherByInvalidTeacherId()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="deleteTeacherByInvalidTeacherId" duration-ms="88" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTeacherByInvalidTeacherId -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="6" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.deleteTeacherByInvalidTeacherId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.deleteTeacherByTeacherId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="setUp" is-config="true" duration-ms="10" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteTeacherByTeacherId()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="deleteTeacherByTeacherId" duration-ms="3" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTeacherByTeacherId -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="5" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.deleteTeacherByTeacherId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.findAllTeachers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="setUp" is-config="true" duration-ms="24" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="findAllTeachers()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="findAllTeachers" duration-ms="4" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllTeachers -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.findAllTeachers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.findById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="setUp" is-config="true" duration-ms="11" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="findById" duration-ms="15" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.findById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.findTeacherByTeacherId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="setUp" is-config="true" duration-ms="13" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="findTeacherByTeacherId()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="findTeacherByTeacherId" duration-ms="15" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTeacherByTeacherId -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.findTeacherByTeacherId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.saveTeacher()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="setUp" is-config="true" duration-ms="9" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="saveTeacher()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="saveTeacher" duration-ms="49" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveTeacher -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="6" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sma.dao.TeacherDaoImplTest.saveTeacher()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.sma.dao.TeacherDaoImplTest@2a70a3d8]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2016-04-21T21:20:16Z" finished-at="2016-04-21T21:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.sma.dao.TeacherDaoImplTest -->
+      <class name="com.sma.controller.TeacherControllerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="setUp" is-config="true" duration-ms="35" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteTeacher()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="deleteTeacher" duration-ms="1" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTeacher -->
+        <test-method status="PASS" signature="editTeacher()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="editTeacher" duration-ms="27" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editTeacher -->
+        <test-method status="PASS" signature="listTeachers()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="listTeachers" duration-ms="2" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listTeachers -->
+        <test-method status="PASS" signature="newTeacher()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="newTeacher" duration-ms="1" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTeacher -->
+        <test-method status="PASS" signature="saveTeacherWithSuccess()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="saveTeacherWithSuccess" duration-ms="3" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveTeacherWithSuccess -->
+        <test-method status="PASS" signature="saveTeacherWithValidationError()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="saveTeacherWithValidationError" duration-ms="1" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveTeacherWithValidationError -->
+        <test-method status="PASS" signature="saveTeacherWithValidationErrorNonUniqueTeacherId()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="saveTeacherWithValidationErrorNonUniqueTeacherId" duration-ms="4" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveTeacherWithValidationErrorNonUniqueTeacherId -->
+        <test-method status="PASS" signature="updateTeacherWithSuccess()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="updateTeacherWithSuccess" duration-ms="3" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTeacherWithSuccess -->
+        <test-method status="PASS" signature="updateTeacherWithValidationError()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="updateTeacherWithValidationError" duration-ms="1" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTeacherWithValidationError -->
+        <test-method status="PASS" signature="updateTeacherWithValidationErrorNonUniqueSSN()[pri:0, instance:com.sma.controller.TeacherControllerTest@64485a47]" name="updateTeacherWithValidationErrorNonUniqueSSN" duration-ms="2" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTeacherWithValidationErrorNonUniqueSSN -->
+      </class> <!-- com.sma.controller.TeacherControllerTest -->
+      <class name="com.sma.service.impl.TeacherServiceImplTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.sma.service.impl.TeacherServiceImplTest@25bbf683]" name="setup" is-config="true" duration-ms="239" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deleteTeacherByTeacherId()[pri:0, instance:com.sma.service.impl.TeacherServiceImplTest@25bbf683]" name="deleteTeacherByTeacherId" duration-ms="23" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTeacherByTeacherId -->
+        <test-method status="PASS" signature="findAllTeachers()[pri:0, instance:com.sma.service.impl.TeacherServiceImplTest@25bbf683]" name="findAllTeachers" duration-ms="10" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllTeachers -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:com.sma.service.impl.TeacherServiceImplTest@25bbf683]" name="findById" duration-ms="4" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="findTeacherByTeacherId()[pri:0, instance:com.sma.service.impl.TeacherServiceImplTest@25bbf683]" name="findTeacherByTeacherId" duration-ms="3" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findTeacherByTeacherId -->
+        <test-method status="PASS" signature="isTeacherTeacherIdUnique()[pri:0, instance:com.sma.service.impl.TeacherServiceImplTest@25bbf683]" name="isTeacherTeacherIdUnique" duration-ms="2" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isTeacherTeacherIdUnique -->
+        <test-method status="PASS" signature="saveTeacher()[pri:0, instance:com.sma.service.impl.TeacherServiceImplTest@25bbf683]" name="saveTeacher" duration-ms="2" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveTeacher -->
+        <test-method status="PASS" signature="updateTeacher()[pri:0, instance:com.sma.service.impl.TeacherServiceImplTest@25bbf683]" name="updateTeacher" duration-ms="2" started-at="2016-04-21T21:20:13Z" finished-at="2016-04-21T21:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTeacher -->
+      </class> <!-- com.sma.service.impl.TeacherServiceImplTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

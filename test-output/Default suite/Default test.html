@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 21 21:20:13 EAT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3032 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.deleteTeacher()'><b>deleteTeacher</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.dao.TeacherDaoImplTest.deleteTeacherByInvalidTeacherId()'><b>deleteTeacherByInvalidTeacherId</b><br>Test class: com.sma.dao.TeacherDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.dao.TeacherDaoImplTest@2a70a3d8</td></tr>
+<tr>
+<td title='com.sma.service.impl.TeacherServiceImplTest.deleteTeacherByTeacherId()'><b>deleteTeacherByTeacherId</b><br>Test class: com.sma.service.impl.TeacherServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.service.impl.TeacherServiceImplTest@25bbf683</td></tr>
+<tr>
+<td title='com.sma.dao.TeacherDaoImplTest.deleteTeacherByTeacherId()'><b>deleteTeacherByTeacherId</b><br>Test class: com.sma.dao.TeacherDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.dao.TeacherDaoImplTest@2a70a3d8</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.editTeacher()'><b>editTeacher</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.service.impl.TeacherServiceImplTest.findAllTeachers()'><b>findAllTeachers</b><br>Test class: com.sma.service.impl.TeacherServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.service.impl.TeacherServiceImplTest@25bbf683</td></tr>
+<tr>
+<td title='com.sma.dao.TeacherDaoImplTest.findAllTeachers()'><b>findAllTeachers</b><br>Test class: com.sma.dao.TeacherDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.dao.TeacherDaoImplTest@2a70a3d8</td></tr>
+<tr>
+<td title='com.sma.service.impl.TeacherServiceImplTest.findById()'><b>findById</b><br>Test class: com.sma.service.impl.TeacherServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.service.impl.TeacherServiceImplTest@25bbf683</td></tr>
+<tr>
+<td title='com.sma.dao.TeacherDaoImplTest.findById()'><b>findById</b><br>Test class: com.sma.dao.TeacherDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.dao.TeacherDaoImplTest@2a70a3d8</td></tr>
+<tr>
+<td title='com.sma.service.impl.TeacherServiceImplTest.findTeacherByTeacherId()'><b>findTeacherByTeacherId</b><br>Test class: com.sma.service.impl.TeacherServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.service.impl.TeacherServiceImplTest@25bbf683</td></tr>
+<tr>
+<td title='com.sma.dao.TeacherDaoImplTest.findTeacherByTeacherId()'><b>findTeacherByTeacherId</b><br>Test class: com.sma.dao.TeacherDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.dao.TeacherDaoImplTest@2a70a3d8</td></tr>
+<tr>
+<td title='com.sma.service.impl.TeacherServiceImplTest.isTeacherTeacherIdUnique()'><b>isTeacherTeacherIdUnique</b><br>Test class: com.sma.service.impl.TeacherServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.service.impl.TeacherServiceImplTest@25bbf683</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.listTeachers()'><b>listTeachers</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.newTeacher()'><b>newTeacher</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.service.impl.TeacherServiceImplTest.saveTeacher()'><b>saveTeacher</b><br>Test class: com.sma.service.impl.TeacherServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.service.impl.TeacherServiceImplTest@25bbf683</td></tr>
+<tr>
+<td title='com.sma.dao.TeacherDaoImplTest.saveTeacher()'><b>saveTeacher</b><br>Test class: com.sma.dao.TeacherDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.dao.TeacherDaoImplTest@2a70a3d8</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.saveTeacherWithSuccess()'><b>saveTeacherWithSuccess</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.saveTeacherWithValidationError()'><b>saveTeacherWithValidationError</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.saveTeacherWithValidationErrorNonUniqueTeacherId()'><b>saveTeacherWithValidationErrorNonUniqueTeacherId</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.service.impl.TeacherServiceImplTest.updateTeacher()'><b>updateTeacher</b><br>Test class: com.sma.service.impl.TeacherServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.service.impl.TeacherServiceImplTest@25bbf683</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.updateTeacherWithSuccess()'><b>updateTeacherWithSuccess</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.updateTeacherWithValidationError()'><b>updateTeacherWithValidationError</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+<tr>
+<td title='com.sma.controller.TeacherControllerTest.updateTeacherWithValidationErrorNonUniqueSSN()'><b>updateTeacherWithValidationErrorNonUniqueSSN</b><br>Test class: com.sma.controller.TeacherControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.sma.controller.TeacherControllerTest@64485a47</td></tr>
+</table><p>
+</body>
+</html>
